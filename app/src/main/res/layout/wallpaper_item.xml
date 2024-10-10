@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/wallpaperImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:background="@drawable/rounded_corners_background" /> <!-- Rounded corners background -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/downloadButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/downloadbutton"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:contentDescription="Download"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sharebutton"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:contentDescription="Share"
+            android:backgroundTint="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/setWallpaperButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/setwallpaper"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:contentDescription="Set Wallpaper"
+            android:backgroundTint="@color/colorPrimaryDark" />
+    </LinearLayout>
+</LinearLayout>
